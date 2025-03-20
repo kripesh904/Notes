@@ -1,0 +1,130 @@
+@font-face{
+    font-family: poppins;
+    src:url(fonts/Poppins.ttf)
+}
+@font-face{
+    font-family: montserrat;
+    src:url(fonts/Montserrat.ttf)
+}
+*{
+    margin: 0;
+}
+body{
+    margin:0;
+    font-family: montserrat;
+}
+.menu{
+    width:20%;
+    background-color: #d1ddef;
+    height:100vh;
+    position:fixed;
+    padding-top: 1.9%;
+}
+#menu-title{
+    color:rgb(6, 6, 6);
+    margin:12%;
+    padding: 10% 0;
+    font-size: 1.7em;
+    font-family: poppins;
+}
+.menu-items{
+    display: inline-block;
+    background-color: #3c3862;
+    border-radius: 5px;
+    color: #ffffff; 
+    margin:3.5% 0 3% 13%;
+    padding:4.75% 22%;
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.menu-items:hover{
+    background-color: #4c4967;
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+#pagein{
+    background-color: #4c4967;
+}
+.menu a{
+    color:#E0E0F0 ;
+    text-decoration: none;
+}
+.homecontent{
+    display:flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(135deg, #0a0f24, #1b3b6f), url('images/bg.webp');
+    min-height: 100vh;
+    background-size:cover;
+}
+.content-text{
+    margin-left: 20%;
+    text-align:center;
+}
+.content-text h1{
+    color:#c9edf4;
+    margin: 2% 7% 4% 7%;
+    padding:2% 1%;
+    font-size:2.9em;
+}
+.content-text p{
+    color:#CCCCDD;
+    line-height: 2;
+    margin: 2% 7% 1% 7%;
+    font-size:1.01em;
+}
+.content{
+    color:white;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(135deg, #0a0f24, #1b3b6f), url('images/bg.webp');
+    min-height: 100vh;
+    background-size:cover;
+    line-height: 1.8;
+    margin-left: 20%;
+    padding: 5% 7% 5% 7%;
+}
+.content h1.cont_tit {
+    font-size: 2.5em; 
+    color: #f2f2f2; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-family: poppins; 
+}
+.content .ques-title{
+color:#ffffff;
+margin:4% 0 3% 0;
+font-size: 2.5em;}
+
+.content h2 {
+    font-size: 2.2em; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    color: #f2f2f2; 
+    font-family: montserrat; 
+}
+
+.content p {
+    font-size: 1.2em; 
+    margin-bottom: 15px; 
+    line-height: 1.8; 
+    color: #d1d1d1;
+}
+
+.content ul {
+    font-size: 1.2em; 
+    margin-left: 20px; 
+    color: #d1d1d1; 
+}
+
+.content h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #3c3862;
+    padding: 10px;
+    border-radius: 5px;
+}
+.content ul li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+}
