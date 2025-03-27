@@ -121,6 +121,9 @@ font-size: 2.5em;}
 }
 .content pre{
     font-size: 1.4em;
+    background-color: rgb(34, 29, 94, 0.7);
+    display:inline;
+    padding: 2px;
 }
 
 .content ul {
