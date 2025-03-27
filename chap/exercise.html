@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer - Class 11</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="menu">
+        <a id="menu-title" href="../index.html">Home</a>
+        <a href="chapter1.html">
+            <div class="menu-items">Chapter 1</div>
+        </a>
+        <a href="chapter2.html">
+            <div class="menu-items">Chapter 2</div>
+        </a>
+        <a href="chapter3.html">
+            <div class="menu-items">Chapter 3</div>
+        </a>
+        <a href="chapter4.html">
+            <div class="menu-items">Chapter 4</div>
+        </a>
+        <a href="chapter5.html">
+            <div class="menu-items">Chapter 5</div>
+        </a>
+        <a href="chapter6.html">
+            <div class="menu-items">Chapter 6</div>
+        </a>
+        <a href="chapter7.html">
+            <div class="menu-items">Chapter 7</div>
+        </a>
+        <a href="chapter8.html">
+            <div class="menu-items">Chapter 8</div>
+        </a>
+        <a id="pagein" href="exercise.html">
+            <div class="menu-items">Programs</div>
+        </a>
+    </div>
+    <div class="content">
+        <h1 class="cont_tit">Exercise - C Programs</h1>
+
+        <h2>1. C Program to check whether the input number is prime</h2>
+        <pre><code>
+        #include&lt;stdio.h&gt;
+        
+        int main() {
+            int i, n, c = 0;
+            printf("Enter any number : ");
+            scanf("%d", &n);
+            for(i = 2; i < n; i++) {
+                if(n % i == 0) {
+                    c++;
+                }
+            }
+            if(c == 0) {
+                printf("Prime");
+            } else {
+                printf("Composite");
+            }
+            return 0;
+        }
+            </code></pre>
+        <h3>Output</h3>
+        <img src="../images/output/pro1.png" alt="" />
+
+        <h2>2. C Program to find factorial of an input number</h2>
+        <pre><code>
+        #include&lt;stdio.h&gt;
+        
+        int main() {
+            int i, n, a = 1;
+            printf("Enter any number : ");
+            scanf("%d", &n);
+            for(i = 1; i <= n; i++) {
+                a = a * i;
+            }
+            printf("Factorial = %d", a);
+            return 0;
+        }
+            </code></pre>
+        <h3>Output</h3>
+        <img src="../images/output/pro2.png" alt="" />
+
+        <h2>3. C Program to check whether the input number is palindrome</h2>
+        <pre><code>
+        #include&lt;stdio.h&gt;
+        
+        int main() {
+            int i, n, a, r = 0;
+            printf("Enter any number : ");
+            scanf("%d", &n);
+            a = n;
+            while(n != 0) {
+                i = n % 10;
+                r = r * 10 + i;
+                n = n / 10;
+            }
+            if(a == r) {
+                printf("Palindrome");
+            } else {
+                printf("Not a Palindrome");
+            }
+            return 0;
+        }
+            </code></pre>
+        <h3>Output</h3>
+
+        <img src="../images/output/pro3.png" alt="" />
+
+        <h2>4. C Program to generate fibonacci Series</h2>
+        <pre><code>
+        #include&lt;stdio.h&gt;
+        
+        int main() {
+            int i, n, a = 0, b = 1, c;
+            printf("Enter any number : ");
+            scanf("%d", &n);
+            for(i = 1; i <= n; i++) {
+                c = a + b;
+                printf("%d ", a);
+                a = b;
+                b = c;
+            }
+            return 0;
+        }
+            </code></pre>
+        <h3>Output</h3>
+        <img src="../images/output/pro4.png" alt="" />
+
+        <h2>5. C Program to check whther input number is perfect</h2>
+        <pre><code>
+        #include&lt;stdio.h&gt;
+        
+        int main() {
+            int i, n, a = 0, b = 1, c;
+            printf("Enter any number : ");
+            scanf("%d", &n);
+            for(i = 1; i <= n; i++) {
+                c = a + b;
+                printf("%d ", a);
+                a = b;
+                b = c;
+            }
+            return 0;
+        }
+            </code></pre>
+        <h3>Output</h3>
+        <img src="../images/output/pro5.png" alt="" />
+    </div>
+</body>
+
+</html>

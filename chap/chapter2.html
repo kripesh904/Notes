@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer - Class 11</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a id="menu-title" href="../index.html">Home</a>
+        <a href="chapter1.html">
+            <div class="menu-items">Chapter 1</div>
+        </a>
+        <a id="pagein" href="chapter2.html">
+            <div class="menu-items">Chapter 2</div>
+        </a>
+        <a href="chapter3.html">
+            <div class="menu-items">Chapter 3</div>
+        </a>
+        <a href="chapter4.html">
+            <div class="menu-items">Chapter 4</div>
+        </a>
+        <a href="chapter5.html">
+            <div class="menu-items">Chapter 5</div>
+        </a>
+        <a href="chapter6.html">
+            <div class="menu-items">Chapter 6</div>
+        </a>
+        <a href="chapter7.html">
+            <div class="menu-items">Chapter 7</div>
+        </a>
+        <a href="chapter8.html">
+            <div class="menu-items">Chapter 8</div>
+        </a>
+        <a href="exercise.html">
+            <div class="menu-items">Programs</div>
+          </a>
+    </div>
+    <div class="content">
+        <h1 class="cont_tit">Chapter 2: Number System, Conversion and Boolean Logic</h1>
+        <h2>1's and 2's Complement</h2>
+        <h3>1's Complement</h3>
+        <p>Invert all bits (1 to 0 and 0 to 1). Example: 1's complement of (1011)₂ is (0100)₂.</p>
+
+        <h3>2's Complement</h3>
+        <p>Add 1 to the 1's complement. Example: 2's complement of (1010)₂ is (0110)₂.</p>
+
+        <h2>Subtraction Using Complements</h2>
+        <h3>Using 1's Complement</h3>
+        <ul>
+            <li>Find 1's complement of subtrahend.</li>
+            <li>Add it to the minuend.</li>
+            <li>If extra bit exists, remove and add to result.</li>
+            <li>If no extra bit, find 1's complement of result and add a negative sign.</li>
+        </ul>
+
+        <h3>Using 2's Complement</h3>
+        <ul>
+            <li>Find 2's complement of subtrahend.</li>
+            <li>Add it to the minuend.</li>
+            <li>If extra bit exists, discard it.</li>
+            <li>If no extra bit, find 2's complement of result and add a negative sign.</li>
+        </ul>
+
+        <h2>Boolean Logic</h2>
+        <p>Boolean Algebra is the study of binary variables (0 and 1) and logical operations. Introduced by George
+            Boole, it is fundamental in logic circuit design.</p>
+
+        <h3>Boolean Variables</h3>
+        <p>Represent logical values (0 or 1). Examples: A, B, X, Y, Z.</p>
+
+        <h3>Boolean Function</h3>
+        <p>Expression combining binary variables and operators (AND, OR, NOT). Example: F = XYZ' + XY.</p>
+
+        <h3>Truth Table</h3>
+        <p>Represents input-output relationships for logical gates.</p>
+
+        <h2>Boolean Operators</h2>
+        <h3>AND Operator (.)</h3>
+        <p>Output is 1 only when both inputs are 1. Example: 1·1 = 1, 1·0 = 0.</p>
+
+        <h3>OR Operator (+)</h3>
+        <p>Output is 1 when at least one input is 1. Example: 1+0 = 1, 0+0 = 0.</p>
+
+        <h3>NOT Operator (‘)</h3>
+        <p>Inverts input value. Example: 1' = 0, 0' = 1.</p>
+
+        <h1 class="ques-title">Questions and Answers</h1>
+
+        <h2>1. What is Boolean Algebra?</h2>
+        <p>Boolean Algebra is a branch of algebra that deals with binary variables and logic operations. It is used in
+            digital logic design and computer science for circuit simplifications and logical expressions.</p>
+        <p>It is based on three basic operations:</p>
+        <ul>
+            <li><strong>AND (⋅):</strong> Outputs true if both inputs are true.</li>
+            <li><strong>OR (+):</strong> Outputs true if at least one input is true.</li>
+            <li><strong>NOT (¬):</strong> Inverts the input value.</li>
+        </ul>
+        <p>Boolean Algebra follows a set of rules and theorems to simplify logical expressions.</p>
+
+        <h2>2. What are the basic laws of Boolean Algebra?</h2>
+        <p>Boolean Algebra follows several fundamental laws:</p>
+        <ul>
+            <li><strong>Commutative Law:</strong> A + B = B + A and A ⋅ B = B ⋅ A</li>
+            <li><strong>Associative Law:</strong> (A + B) + C = A + (B + C) and (A ⋅ B) ⋅ C = A ⋅ (B ⋅ C)</li>
+            <li><strong>Distributive Law:</strong> A ⋅ (B + C) = (A ⋅ B) + (A ⋅ C)</li>
+            <li><strong>Identity Law:</strong> A + 0 = A and A ⋅ 1 = A</li>
+            <li><strong>Complement Law:</strong> A + A' = 1 and A ⋅ A' = 0</li>
+            <li><strong>Idempotent Law:</strong> A + A = A and A ⋅ A = A</li>
+        </ul>
+        <p>These laws are used to simplify Boolean expressions for logic circuit design.</p>
+
+        <h2>3. What are De Morgan’s Theorems?</h2>
+        <p>De Morgan’s Theorems are important rules used to simplify Boolean expressions:</p>
+        <ul>
+            <li><strong>First Theorem:</strong> ¬(A ⋅ B) = ¬A + ¬B</li>
+            <li><strong>Second Theorem:</strong> ¬(A + B) = ¬A ⋅ ¬B</li>
+        </ul>
+        <p>These theorems help in converting AND operations to OR operations and vice versa, simplifying logic circuit
+            implementation.</p>
+
+        <h2>4. Explain the use of Karnaugh Map (K-Map) in Boolean Algebra.</h2>
+        <p>Karnaugh Map (K-Map) is a visual method used to simplify Boolean expressions. It organizes truth table values
+            into a grid where adjacent cells differ by a single variable.</p>
+        <p>Steps to simplify using K-Map:</p>
+        <ul>
+            <li>Draw a K-Map based on the number of variables (2, 3, or 4 variables).</li>
+            <li>Fill in the K-Map with truth table values.</li>
+            <li>Group adjacent 1s in powers of 2 (1, 2, 4, 8, etc.).</li>
+            <li>Write the simplified Boolean expression.</li>
+        </ul>
+        <p>K-Maps reduce complex expressions, making circuit design more efficient.</p>
+
+        <h2>5. What is a logic gate? Explain different types of logic gates.</h2>
+        <p>A logic gate is an electronic circuit that performs Boolean operations. The basic types of logic gates
+            include:</p>
+        <ul>
+            <li><strong>AND Gate:</strong> Outputs 1 if both inputs are 1.</li>
+            <li><strong>OR Gate:</strong> Outputs 1 if at least one input is 1.</li>
+            <li><strong>NOT Gate:</strong> Inverts the input (1 becomes 0, and 0 becomes 1).</li>
+            <li><strong>NAND Gate:</strong> Combination of AND and NOT (inverted AND output).</li>
+            <li><strong>NOR Gate:</strong> Combination of OR and NOT (inverted OR output).</li>
+            <li><strong>XOR Gate:</strong> Outputs 1 if inputs are different.</li>
+            <li><strong>XNOR Gate:</strong> Outputs 1 if inputs are the same.</li>
+        </ul>
+        <p>Logic gates are used to build digital circuits in computing and electronics.</p>
+
+    </div>
+    </div>
+</body>
+
+</html>
