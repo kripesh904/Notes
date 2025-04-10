@@ -12,6 +12,7 @@
 body{
     margin:0;
     font-family: montserrat;
+    overflow-x: hidden;
 }
 .menu{
     width:20%;
@@ -28,6 +29,7 @@ body{
     font-family: poppins;
 }
 .menu-items{
+    width: 80px;
     display: inline-block;
     background-color: #3c3862;
     border-radius: 5px;
@@ -62,7 +64,7 @@ body{
     text-align:center;
 }
 #home_title{
-    font-size: 4em; 
+    font-size: 3em; 
     margin-top: 25px; 
     margin-bottom: 10px; 
     color: #f2f2f2; 
@@ -82,7 +84,7 @@ body{
     color:white;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(135deg, #0a0f24, #1b3b6f), url('images/bg.webp');
+    background-image:linear-gradient(135deg, #0a0f24, #1a2d4d), url('images/bg.webp');
     min-height: 100vh;
     background-size:cover;
     line-height: 1.8;
@@ -120,10 +122,10 @@ font-size: 2.5em;}
     color: #d1d1d1;
 }
 .content pre{
-    font-size: 1.4em;
-    background-color: rgb(34, 29, 94, 0.7);
-    display:inline;
-    padding: 2px;
+    display: inline-block;
+    font-size: 1.25em;
+    background-color: rgba(40, 38, 66, 0.7);
+    padding: 20px;
 }
 
 .content ul {
