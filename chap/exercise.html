@@ -34,16 +34,339 @@
             <div class="menu-items">Chapter 8</div>
         </a>
         <a id="pagein" href="exercise.html">
-            <div class="menu-items">Programs</div>
+            <div class="menu-items">Revision</div>
         </a>
     </div>
     <div class="content">
-        <h1 class="cont_tit">Exercise - C Programs</h1>
+        <h1 class="cont_tit">Revision Work</h1>
 
-        <h2>1. C Program to check whether the input number is prime</h2>
-        <pre><code>
-        #include&lt;stdio.h&gt;
+        <h2>1. Definitions</h2>
+
+        <h3>a. Variable</h3>
+        <p>
+            A variable is a named memory location used to store data that
+            can be modified during the execution of a program. It allows
+            dynamic assignment of values based on conditions, user inputs,
+            or calculations done by the system.
+        </p>
+
+        <h3>b. Expression</h3>
+        <p>
+            An expression is a valid combination of variables, constants,
+            operators, and functions that produces a single value when
+            evaluated. It is essential for performing operations, assigning
+            values, and controlling flow within a program.
+        </p>
+
+        <h3>c. Identifier</h3>
+        <p>
+            An identifier is the name assigned to elements like variables,
+            functions, arrays, or structures in a program. It must start
+            with a letter or an underscore and should not match any of the
+            language's reserved keywords.
+        </p>
+
+        <h3>d. Keyword</h3>
+        <p>
+            A keyword is a reserved word that has a predefined meaning in
+            the programming language. These words are used for defining the
+            structure and syntax and cannot be used for variable or function
+            names.
+        </p>
+
+        <h3>e. Constant</h3>
+        <p>
+            A constant is a value that does not change during the execution
+            of a program. Once declared and assigned, its value remains
+            fixed and is used to prevent accidental changes to critical
+            data.
+        </p>
+
+        <h3>f. Operator</h3>
+        <p>
+            An operator is a symbol used to perform operations on variables
+            and values. It includes arithmetic, logical, relational,
+            bitwise, assignment, and other types, depending on the
+            language's capabilities.
+        </p>
+
+        <h3>g. Data Type</h3>
+        <p>
+            A data type defines the kind of value a variable can hold, such
+            as integers, floats, characters, or strings. It determines the
+            size, range, and operations that can be performed on the
+            variable.
+        </p>
+
+        <h3>h. Token</h3>
+        <p>
+            A token is the smallest unit of a program that the compiler
+            recognizes. Examples include keywords, identifiers, constants,
+            operators, and punctuation symbols, which together form the
+            basic syntax of the language.
+        </p>
+
+        <h3>i. Compiler</h3>
+        <p>
+            A compiler is a software tool that translates source code
+            written in a high-level programming language into machine code.
+            It checks the code for syntax errors and generates executable
+            files that can run independently.
+        </p>
+
+        <h3>j. Interpreter</h3>
+        <p>
+            An interpreter is a program that reads and executes code line by
+            line, converting it to machine code at runtime. Unlike a
+            compiler, it does not produce a separate executable file but
+            runs the code directly.
+        </p>
+
+        <h3>k. Header File</h3>
+        <p>
+            A header file is a file containing declarations of functions and
+            macros. It is included in the source file using the #include
+            directive and provides access to standard or custom library
+            functions.
+        </p>
+
+        <h3>l. Bitwise Operator</h3>
+        <p>
+            Bitwise operators are used to perform operations on individual
+            bits of data. These include AND, OR, XOR, NOT, left shift, and
+            right shift, and they are mainly used for low-level programming
+            and performance optimizations.
+        </p>
+
+        <h3>m. Type Conversion</h3>
+        <p>
+            Type conversion is the process of converting a variable from one
+            data type to another. It can be implicit (automatic) or explicit
+            (casted by the programmer) and is used when combining different
+            data types in expressions.
+        </p>
+
+        <h2>2. Short Questions</h2>
+
+        <h3>1. What is the objective of the IT Policy 2072?</h3>
+        <p>
+            The main objective of the IT Policy 2072 in Nepal is to
+            transform the nation into a knowledge-based society by utilizing
+            information technology to drive development and economic growth.
+            It aims to enhance IT infrastructure and accessibility across
+            the country.
+        </p>
+
+        <h3>2. What is malware? Write any two types of malware.</h3>
+        <p>
+            Malware is malicious software designed to damage, disrupt, or
+            gain unauthorized access to a computer system. It includes
+            viruses, worms, and other harmful programs.
+        </p>
+        <p>Two types of malware are:</p>
+        <ul>
+            <li>
+                Virus: A program that attaches itself to other files or
+                programs, spreading when those files are executed.
+            </li>
+            <li>
+                Worm: A self-replicating program that spreads across
+                networks and systems without needing to attach to another
+                file.
+            </li>
+        </ul>
+
+        <h3>3. What is cyber law?</h3>
+        <p>
+            Cyber law refers to legal regulations that govern the use of the
+            internet and digital technology. It deals with issues such as
+            cybercrimes, digital transactions, data privacy, intellectual
+            property, and the legal aspects of e-commerce and online
+            activities.
+        </p>
+
+        <h3>4. Write any two features of a digital signature.</h3>
+        <p>
+            A digital signature ensures the authenticity and integrity of
+            electronic messages or documents.
+        </p>
+        <p>Two features are:</p>
+        <ul>
+            <li>
+                Authentication: It verifies the identity of the sender of
+                the message or document.
+            </li>
+            <li>
+                Integrity: It ensures that the content has not been altered
+                during transmission.
+            </li>
+        </ul>
+
+        <h3>5. Define computer ethics.</h3>
+        <p>
+            Computer ethics is the set of moral principles and standards
+            that guide the use of computers, software, and technology. It
+            includes issues like privacy, security, intellectual property,
+            and the responsible use of digital resources.
+        </p>
+
+        <h2>3. Long Questions</h2>
+
+        <h3>
+            a. What are the different types of errors in programming?
+            Explain with examples.
+        </h3>
+        <p>
+            Errors in programming can be categorized into three types:
+            syntax errors, semantic errors, and runtime errors.
+        </p>
+        <p>
+            <strong>Syntax Errors:</strong> These errors occur when the code
+            violates the syntax rules of the programming language. The
+            compiler detects these errors and prevents the program from
+            compiling.
+        </p>
+        <pre>
+            printf("Hello, World!")  // Missing semicolon
+        </pre>
+        <br /><br />
+        <p>
+            <strong>Semantic Errors:</strong> These errors happen when the
+            code is syntactically correct but doesn’t perform as expected
+            due to logical flaws.
+        </p>
+        <pre>
+            int a = 5, b = 0;
+            printf("%d", a / b);  
+        </pre>
+        <p>
+            <strong>Runtime Errors:</strong> These errors occur when the
+            program is running. They usually result from invalid operations
+            such as dividing by zero, accessing memory incorrectly, or using
+            null pointers.
+        </p>
+        <pre>
+            int *ptr = NULL;
+            printf("%d", *ptr);  
+        </pre>
+        <br /><br />
+        <h3>
+            b. Explain the different ways of adding CSS to an HTML file.
+        </h3>
+        <p>
+            CSS can be added to an HTML file in three main ways: inline,
+            internal, and external.
+        </p>
+
+        <p>
+            <strong>Inline CSS:</strong> This method involves adding CSS
+            rules directly within HTML tags using the style attribute. It is
+            useful for small, specific styling but not ideal for large
+            projects.
+        </p>
+        <pre>
+        <code>&lt;p style="color: blue;"&gt;This is blue text.&lt;/p&gt;</code>
+        </pre>
+        <br /><br />
+
+        <p>
+            <strong>Internal CSS:</strong> CSS is defined within a style
+            block inside the <code>&lt;head&gt;</code> section of the HTML
+            document. This method is used when the styles apply to a
+            specific page.
+        </p>
+        <pre>
+        <code>&lt;html&gt;
+          &lt;head&gt;
+            &lt;style&gt;
+              p {
+                color: green;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;p&gt;This is green text.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;</code>
+        </pre>
+        <br /><br />
+
+        <p>
+            <strong>External CSS:</strong> CSS is written in a separate .css
+            file and linked to the HTML file using the
+            <code>&lt;link&gt;</code> element. This method is best for large
+            projects, as it separates content from design and allows for
+            code reuse.
+        </p>
+        <pre>
+        &lt;!-- index.html --&gt;
+        &lt;head&gt;
+          &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
         
+        &lt;!-- style.css --&gt;
+        p {
+          color: red;
+        }
+        </pre>
+        <br /><br />
+        <h3>
+            c. What are the generations of computers? Discuss their key
+            features and examples.
+        </h3>
+        <p>
+            The history of computers is divided into five generations based
+            on the technology used in their design and development.
+        </p>
+        <p>
+            <strong>First Generation (1940–1956):</strong> First-generation
+            computers used vacuum tubes for circuitry, which made them
+            large, slow, and power-hungry. They required a lot of space and
+            generated heat, which made them difficult to maintain. The input
+            was typically via punched cards, and output was through
+            printouts. An example is the ENIAC (Electronic Numerical
+            Integrator and Computer).
+        </p>
+        <p>
+            <strong>Second Generation (1956–1963):</strong> Transistors
+            replaced vacuum tubes in second-generation computers, making
+            them smaller, faster, and more reliable. They consumed less
+            power and produced less heat. High-level programming languages
+            like COBOL and FORTRAN were introduced. An example is the IBM
+            1401.
+        </p>
+        <p>
+            <strong>Third Generation (1964–1971):</strong> Integrated
+            circuits (ICs) replaced transistors, leading to more powerful
+            and compact computers. Third-generation computers could handle
+            more complex tasks and supported multitasking. High-level
+            languages like FORTRAN and COBOL became more widespread.
+        </p>
+        <p>
+            <strong>Fourth Generation (1971–Present):</strong>
+            Microprocessors were introduced, which placed all components of
+            a computer’s CPU on a single chip. This revolutionized the
+            computer industry, leading to personal computers (PCs).
+            Graphical user interfaces (GUIs), the internet, and high-level
+            programming languages became widespread. Examples include the
+            Apple II and IBM PC.
+        </p>
+        <p>
+            <strong>Fifth Generation (Present and Beyond):</strong> The
+            focus of fifth-generation computers is on artificial
+            intelligence (AI), machine learning, and robotics. These systems
+            aim to simulate human intelligence and perform tasks that
+            require reasoning and decision-making. Examples include
+            AI-driven systems like virtual assistants and autonomous
+            vehicles.
+        </p>
+
+        <h2>C Programs</h2>
+        <br />
+        <h3>1. Program to Check Whether the Input Number is Prime</h3>
+        <pre>
+        #include &lt;stdio.h&gt;
+
         int main() {
             int i, n, c = 0;
             printf("Enter any number : ");
@@ -60,14 +383,13 @@
             }
             return 0;
         }
-            </code></pre>
-        <h3>Output</h3>
-        <img src="../images/output/pro1.png" alt="" />
+        </pre>
+        <br /><br /><br />
 
-        <h2>2. C Program to find factorial of an input number</h2>
-        <pre><code>
-        #include&lt;stdio.h&gt;
-        
+        <h3>2. Program to Find Factorial of an Input Number</h3>
+        <pre>
+        #include &lt;stdio.h&gt;
+
         int main() {
             int i, n, a = 1;
             printf("Enter any number : ");
@@ -78,14 +400,13 @@
             printf("Factorial = %d", a);
             return 0;
         }
-            </code></pre>
-        <h3>Output</h3>
-        <img src="../images/output/pro2.png" alt="" />
+        </pre>
+        <br /><br /><br />
 
-        <h2>3. C Program to check whether the input number is palindrome</h2>
-        <pre><code>
-        #include&lt;stdio.h&gt;
-        
+        <h3>3. Program to Check Whether the Input Number is Palindrome</h3>
+        <pre>
+        #include &lt;stdio.h&gt;
+
         int main() {
             int i, n, a, r = 0;
             printf("Enter any number : ");
@@ -103,15 +424,13 @@
             }
             return 0;
         }
-            </code></pre>
-        <h3>Output</h3>
+        </pre>
+        <br /><br /><br />
 
-        <img src="../images/output/pro3.png" alt="" />
+        <h3>4. Program to Generate Fibonacci Series</h3>
+        <pre>
+        #include &lt;stdio.h&gt;
 
-        <h2>4. C Program to generate fibonacci Series</h2>
-        <pre><code>
-        #include&lt;stdio.h&gt;
-        
         int main() {
             int i, n, a = 0, b = 1, c;
             printf("Enter any number : ");
@@ -124,29 +443,314 @@
             }
             return 0;
         }
-            </code></pre>
-        <h3>Output</h3>
-        <img src="../images/output/pro4.png" alt="" />
+        </pre>
+        <br /><br /><br />
 
-        <h2>5. C Program to check whther input number is perfect</h2>
-        <pre><code>
-        #include&lt;stdio.h&gt;
-        
+        <h3>5. Program to Check Whether the Input Number is Perfect</h3>
+        <pre>
+        #include &lt;stdio.h&gt;
+
         int main() {
-            int i, n, a = 0, b = 1, c;
+            int i, n, sum = 0;
             printf("Enter any number : ");
             scanf("%d", &n);
-            for(i = 1; i <= n; i++) {
-                c = a + b;
-                printf("%d ", a);
-                a = b;
-                b = c;
+            for(i = 1; i <= n / 2; i++) {
+                if(n % i == 0) {
+                    sum = sum + i;
+                }
+            }
+            if(sum == n) {
+                printf("Perfect");
+            } else {
+                printf("Not Perfect");
             }
             return 0;
         }
-            </code></pre>
-        <h3>Output</h3>
-        <img src="../images/output/pro5.png" alt="" />
+        </pre>
+        <br /><br /><br />
+
+        <h3>6. Program to Print Pyramid Pattern</h3>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n = 5, i, j, space;
+
+    for(i = 1; i <= n; i++) {
+        for(space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+
+        for(j = 1; j <= 2 * i - 1; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+</code></pre>
+        <br /><br /><br />
+
+        <h3>7. Program to Sum Main Diagonal Elements of a Square Matrix</h3>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i, j, sum = 0;
+
+    scanf("%d", &n);
+
+    int matrix[n][n];
+
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    for(i = 0; i < n; i++) {
+        sum += matrix[i][i];
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+}
+</code></pre>
+        <br /><br /><br />
+
+        <h3>
+            8. Program to Sum Lower Triangular Elements of a Square Matrix
+        </h3>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i, j, sum = 0;
+
+    scanf("%d", &n);
+
+    int matrix[n][n];
+
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    for(i = 0; i < n; i++) {
+        for(j = 0; j <= i; j++) {
+            sum += matrix[i][j];
+        }
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+}
+</code></pre>
+        <br /><br /><br />
+
+        <h3>9. Program to Sum Even and Odd Elements of a Square Matrix</h3>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i, j, evenSum = 0, oddSum = 0;
+
+    scanf("%d", &n);
+
+    int matrix[n][n];
+
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
+
+            if(matrix[i][j] % 2 == 0) {
+                evenSum += matrix[i][j];
+            } else {
+                oddSum += matrix[i][j];
+            }
+        }
+    }
+
+    printf("%d\n", evenSum);
+    printf("%d\n", oddSum);
+
+    return 0;
+}
+</code></pre>
+        <br /><br /><br />
+
+        <h2>Table in HTML</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table border="1" style="border-collapse:collapse"&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2"&gt;fruits&lt;/td&gt;
+      &lt;td colspan="2"&gt;vegetables&lt;/td&gt;
+      &lt;td colspan="2"&gt;cold drinks&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2"&gt;apple&lt;/td&gt;
+      &lt;td&gt;carrot&lt;/td&gt;
+      &lt;td&gt;radish&lt;/td&gt;
+      &lt;td colspan="2"&gt;coke&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2"&gt;banana&lt;/td&gt;
+      &lt;td colspan="2"&gt;chilli&lt;/td&gt;
+      &lt;td&gt;fanta&lt;/td&gt;
+      &lt;td&gt;slice&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;strawberry&lt;/td&gt;
+      &lt;td&gt;blueberry&lt;/td&gt;
+      &lt;td colspan="2"&gt;cucumber&lt;/td&gt;
+      &lt;td&gt;lemon water&lt;/td&gt;
+      &lt;td&gt;cold coffee&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <br />
+
+        <h2>HTML Tags and Elements</h2>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML Multimedia&lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;style&gt;
+            .img-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h1 {
+                text-decoration: underline;
+            }
+            form div {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+            ol {
+                list-style-type: alphabet;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;div class="img-container"&gt;
+            &lt;img src="img.jpg" style="width: 450px; height: 300px;"&gt;
+            &lt;video src="vid1.mp4" controls&gt;&lt;/video&gt;
+        &lt;/div&gt;
+
+        &lt;h1&gt;Table&lt;/h1&gt;
+        &lt;table border="1" style="border: 1px solid black; border-collapse: collapse;"&gt;
+            &lt;tr&gt;
+                &lt;td colspan="3"&gt;Programming Languages&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2"&gt;Server Side&lt;/td&gt;
+                &lt;td&gt;Client Side&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;PHP&lt;/td&gt;
+                &lt;td&gt;ASP.NET&lt;/td&gt;
+                &lt;td&gt;JavaScript&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+
+        &lt;h1&gt;List&lt;/h1&gt;
+        &lt;p&gt;Hardware&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Keyboard&lt;/li&gt;
+            &lt;li&gt;Mouse&lt;/li&gt;
+            &lt;li&gt;Monitor&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h1&gt;Software&lt;/h1&gt;
+        &lt;ol style="list-style-type: alphabet;"&gt;
+            &lt;li&gt;Application Software&lt;/li&gt;
+            &lt;li&gt;Customized Software&lt;/li&gt;
+            &lt;li&gt;Utility Software&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h1&gt;Memory&lt;/h1&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Cache&lt;/li&gt;
+            &lt;li&gt;Register&lt;/li&gt;
+            &lt;li&gt;RAM&lt;/li&gt;
+            &lt;li&gt;ROM&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h1&gt;Form&lt;/h1&gt;
+        &lt;form&gt;
+            &lt;div&gt;
+                &lt;label for="rNum"&gt;Roll No:&lt;/label&gt;
+                &lt;input type="text" id="rNum" name="rNum"&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;label for="fName"&gt;First Name:&lt;/label&gt;
+                &lt;input type="text" id="fName" name="fName"&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;label for="lName"&gt;Last Name:&lt;/label&gt;
+                &lt;input type="text" id="lName" name="lName"&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;label&gt;Gender:&lt;/label&gt;
+                &lt;input type="radio" id="male" name="gender" value="male"&gt;
+                &lt;label for="male"&gt;Male&lt;/label&gt;
+                &lt;input type="radio" id="female" name="gender" value="female"&gt;
+                &lt;label for="female"&gt;Female&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;label&gt;Hobbies:&lt;/label&gt;
+                &lt;span&gt;
+                    &lt;div&gt;
+                        &lt;input type="checkbox" id="travelling" name="hobby" value="Travelling"&gt;
+                        &lt;label for="travelling"&gt;Travelling&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type="checkbox" id="singing" name="hobby" value="Singing"&gt;
+                        &lt;label for="singing"&gt;Singing&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type="checkbox" id="cooking" name="hobby" value="Cooking"&gt;
+                        &lt;label for="cooking"&gt;Cooking&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type="checkbox" id="others" name="hobby" value="Others"&gt;
+                        &lt;label for="others"&gt;Others&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;label for="country"&gt;Country:&lt;/label&gt;
+                &lt;select id="country" name="country"&gt;
+                    &lt;option value=""&gt;Choose&lt;/option&gt;
+                    &lt;option value="nepal"&gt;Nepal&lt;/option&gt;
+                    &lt;option value="india"&gt;India&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;button id="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
     </div>
 </body>
 
